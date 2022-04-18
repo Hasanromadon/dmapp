@@ -15,7 +15,7 @@ const Report = () => {
   });
   const currentMonth = new Date().getMonth() + 1;
   const reportCurrentMonth =
-    reports && reports.find((report) => report.month === currentMonth);
+    reports && reports.find((report) => +report.month === currentMonth);
 
   const allRevenue = (reports) => {
     let totalRevenue = 0;
