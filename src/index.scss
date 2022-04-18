@@ -1,0 +1,533 @@
+body {
+  font-family: 'Montserrat', sans-serif ;
+  background-color: #1F1F1F;
+  color: white;
+}
+.auth-section {
+  height: 100vh;
+}
+
+.text-red-primary {
+  color: #ED213A !important;
+}
+
+
+.form-container {
+  background-color: #2C2C2E;
+}
+// .form-container::before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   background-image: "url('../assets/icons/dot-yellow.svg')";
+// }
+
+.button-dumb-merch, .link-dumb-merch  {
+  background: linear-gradient(122.43deg, #ED213A 15.77%, #93291E 87.66%);
+  border: none;
+}
+.btn-outlined {
+  background: none;
+  border: none;
+  outline: none;
+  &:focus {
+    background: none !important;
+  }
+  &:hover {
+    background: none;
+  }
+  &:active {
+    background: none;
+  }
+}
+
+
+.bg-dot-big {
+  bottom: -35px;
+  right: -35px;
+  z-index: -1;
+}
+
+.bg-dot-small {
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.auth-container {
+  margin-top: 120px;
+}
+
+.auth-logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav-logo {
+  width: 50px;
+  height: auto;
+}
+
+
+.card-text-stock {
+  font-size: 13px;
+}
+
+.card-best-seller {
+  top: 10px;
+  right: 10px;
+  background-color: #0B0B0B;
+  color: #FACD0E;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.divider {
+  border-top: .5px solid #C4C4C4;
+}
+
+.special-promo {
+  margin-top: -10px;
+}
+
+.fs-small {
+  font-size: 13px;
+}
+
+.fs-xsamll {
+  font-size: 9px;
+}
+
+.transaction-img {
+  object-fit: contain;
+}
+td {
+  vertical-align: middle;
+}
+
+
+.form-input-big {
+  height: 100px;
+}
+
+.user-profile {
+  border: 2px linear-gradient(90deg, #4DD4F7 -4.84%, #9090FB 32.29%, #FF6B81 66.15%, #FBDF63 100%);
+}
+
+.message-left {
+  max-width: 50%;
+  position: relative;
+  background-color: #575757;
+  align-self: center;
+  text-overflow: ellipsis;
+}
+
+
+.complain-page {
+  height: 88vh;
+}
+
+.messages-container {
+  height: 80vh;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+
+ }
+
+ .send-message {
+  height: 6vh;
+ }
+
+ .polygon-chat {
+   left: -20px;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ .message-right-container {
+  position: relative;
+  background-color: #262626;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  margin-right: 20px;
+ }
+ 
+ .polygon-chat-right {
+   right: -20px;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ .card-product {
+   height: 400px;
+   background-color: #2C2C2E;
+   width: 100%;
+ }
+ .card-product-name {
+   font-weight: 500;
+ }
+ .card-product-price {
+   font-weight: bold;
+ }
+
+ .card-image {
+   width: 100%;
+   height: 60%;
+   overflow: hidden;
+   & img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+   }
+ }
+
+
+.title-product {
+  text-decoration: none;
+  color: #F74D4D;
+}
+.title-product:hover {
+  color: #b10404;
+}
+
+.image-detail-container {
+  width: 100%;
+  height: 350px;
+}
+
+.image-detail-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* footer */
+footer {
+  background-color: #2e2e2e ;
+  margin-top: 200px !important;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #bfbebe;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.sidenav-link {
+  color: #A59C9C;
+  font-weight: 600;
+}
+.sidenav-link:hover {
+  color: white;
+  margin-bottom: 1rem;
+}
+.profile-badge {
+  font-size: 13px;
+}
+
+.order-item {
+  background-color: #2C2C2E;
+}
+
+.order-date {
+  font-size: 13px;
+}
+.order-item-name span, .order-price span {
+  font-size: 13px;
+}
+
+.tab-profile {
+  border: none;
+}
+
+#tab-profile-tab-personal-info,#tab-profile-tab-security {
+  background: none;
+  color: #ED213A;
+  font-weight: 600;
+  border: transparent;
+}
+
+.nav-link.active {
+  border-bottom: 1px solid  #ED213A  !important;
+}
+
+/* report */
+
+.monthly-revenue {
+  background-color: #2C2C2E;
+}
+
+
+
+
+
+
+// .Collapsible {
+//   background-color: red;
+// }
+
+
+//The content within the collaspable area
+.Collapsible__contentInner {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+//The link which when clicked opens the collapsable area
+.Collapsible__trigger {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  color: #A59C9C;
+
+
+  &:after {
+    content: "\2039";
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    font-weight: 600;
+    font-size: 24px;
+    display: block;
+    transition: transform 300ms;
+    transform: rotateZ(270deg);
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(90deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+
+.CustomTriggerCSS {
+  background-color: lightcoral;
+  transition: background-color 200ms ease;
+  
+  
+}
+
+.CustomTriggerCSS--open {
+  background-color: darkslateblue;
+}
+
+.Collapsible__custom-sibling {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #CBB700;
+  color: black;
+}
+
+.product-added {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+}
+
+.cart-container {
+  background-color: #2C2C2E;
+}
+
+.receiver {
+  border-bottom: 1px solid #535353;
+}
+
+
+.contact {
+  &:hover {
+cursor: pointer;
+background-color: #2C2C2E
+
+  }
+}
+
+
+
+.active-chat{
+  background-color: #2C2C2E
+}
+.no-message {
+  display : flex;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+// by jodi
+
+
+.img-contact {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: cover !important;
+}
+
+.img-chat {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover !important;
+}
+
+.text-contact {
+  font-size: 14px;
+}
+
+.text-contact-chat {
+  color: #ababab;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact img {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact:hover {
+  background-color: #212121;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact:active {
+  background-color: #3d3d3d;
+  transition: 0.3s;
+}
+
+.contact-active {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.input-message {
+  width: 100%;
+  height: 90%;
+  background: rgba(171, 171, 171, 0.15);
+  border: none;
+  color: #ffffff;
+}
+
+.chat-me {
+  position: relative;
+  background: #262626;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-me::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #262626;
+  border-bottom: 15px solid transparent;
+}
+.chat-other {
+  position: relative;
+  background: #575757;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-other::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #575757;
+  border-bottom: 15px solid transparent;
+}
+
+.order-status-pending {
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 30px;
+}
+
+.image-profile {
+  object-fit: cover;
+}
+.order-number {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tracking-number {
+  background-color: #474747;
+  & p {
+    font-size: 13px;
+  }
+
+}
+
+.review-form {
+  background-color: #2C2C2E;
+}
+
+
+// .search-icon {
+//   right: 0 !important;
+// }
+
+.form-check-input:checked {
+background-color:   #ED213A;
+border-color: #ED213A;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+.reset-button {
+  text-decoration: none;
+  color: white;
+&:hover {
+  color: #ED213A;
+}
+
+}
+
+// * {
+//   outline: 1px solid red;
+// }
