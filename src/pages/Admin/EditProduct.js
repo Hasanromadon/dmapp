@@ -250,7 +250,9 @@ const EditProduct = () => {
                 />
               </FloatingLabel>
               <div className="d-grid mt-5">
-                <ButtonDumbMerch type="submit">Save</ButtonDumbMerch>
+                <ButtonDumbMerch loading={handleSubmit.isLoading} type="submit">
+                  Save
+                </ButtonDumbMerch>
               </div>
             </form>
           </Col>

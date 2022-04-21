@@ -59,7 +59,7 @@ const OrderItemCard = ({ order, admin, handleUpdateTrackingOrder }) => {
                             <img
                               width={40}
                               height={25}
-                              src={`http://localhost:5000/uploads/products/${item?.product_detail.image}`}
+                              src={`https://res.cloudinary.com/dwfrpd7dh/image/upload/v1650317361/${item?.product_detail.image}`}
                               alt=""
                             />
                           </div>
