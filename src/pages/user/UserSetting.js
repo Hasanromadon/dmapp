@@ -44,7 +44,7 @@ const UserSetting = () => {
       }
     }
   };
-
+  console.log('oke');
   return (
     <LayoutUser>
       <Col className="p-0">
@@ -62,7 +62,7 @@ const UserSetting = () => {
                       ? state.user?.profile?.image
                       : '/assets/images/default_profile.png'
                   }
-                  alt=""
+                  alt="admin"
                 />
                 <label
                   className="button-dumb-merch p-1 rounded"
