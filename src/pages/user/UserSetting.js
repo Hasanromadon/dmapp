@@ -58,8 +58,8 @@ const UserSetting = () => {
                   width={'100%'}
                   height={120}
                   src={
-                    state.user.profile.image !== null
-                      ? state.user.profile.image
+                    state.user?.profile?.image !== null
+                      ? state.user?.profile?.image
                       : '/assets/images/default_profile.png'
                   }
                   alt=""
