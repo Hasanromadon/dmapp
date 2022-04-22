@@ -10,7 +10,7 @@ const Footer = () => {
               className="mb-2"
               width={34}
               src="/assets/icons/dumbmerch-logo.svg"
-              alt=""
+              alt="dumbways logo"
             />
             <p className="m-0 footer-text">
               Dumbmerch is App for buy merchandise, just go to dumb merch
