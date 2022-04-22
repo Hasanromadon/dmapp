@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FloatingLabel, Form, Col, Row } from 'react-bootstrap';
 import ButtonDumbMerch from '../../components/ButtonDumbMerch';
 import LayoutAdmin from '../../hoc/LayoutAdmin';
-import Select, { StylesConfig } from 'react-select';
+import Select from 'react-select';
 import { API } from '../../config/api';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -76,7 +76,7 @@ const AddProduct = () => {
           'Content-type': 'multipart/form-data',
         },
       };
-      const response = await API.post('/products', formData, config);
+      await API.post('/products', formData, config);
       toast('New product added');
       navigate('/admin/product');
     } catch (error) {

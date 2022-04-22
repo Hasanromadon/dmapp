@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 import Contact from '../../components/Contact';
 import Chat from '../../components/Chat';
 import { UserContext } from '../../context/user/UserContext';
-import ContactByJody from '../../components/ContactByJody';
+import ContactComplain from '../../components/ContactComplain';
 
 let socket;
 const Complain = () => {
@@ -20,7 +20,7 @@ const Complain = () => {
   const [state] = useContext(UserContext);
 
   useEffect(() => {
-    socket = io('http://localhost:5000', {
+    socket = io('https://dumbmerch-hasan.herokuapp.com', {
       auth: {
         token: localStorage.getItem('token'),
       },
@@ -97,7 +97,7 @@ const Complain = () => {
       <Container>
         <Row className="complain-page">
           <Col className="border-end border-secondary" md={4}>
-            <ContactByJody
+            <ContactComplain
               dataContact={contacts}
               clickContact={onClickContact}
               contact={contact}

@@ -9,7 +9,7 @@ const Footer = () => {
             <img
               className="mb-2"
               width={34}
-              src="assets/icons/dumbmerch-logo.svg"
+              src="/assets/icons/dumbmerch-logo.svg"
               alt=""
             />
             <p className="m-0 footer-text">

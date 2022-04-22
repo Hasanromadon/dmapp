@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function ContactByJody({ dataContact, clickContact, contact }) {
+export default function ContactComplain({
+  dataContact,
+  clickContact,
+  contact,
+}) {
   return (
     <>
       {dataContact.length > 0 && (

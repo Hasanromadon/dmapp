@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col, FormControl, FloatingLabel, Form } from 'react-bootstrap';
+import { Row, Col, FloatingLabel, Form } from 'react-bootstrap';
 import { useFormik } from 'formik';
 import dateFormat from 'dateformat';
-import ReactStars from 'react-stars';
 import { Rating } from 'react-simple-star-rating';
 import ButtonDumbMerch from './ButtonDumbMerch';
 import { useMutation } from 'react-query';

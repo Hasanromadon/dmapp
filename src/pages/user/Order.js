@@ -1,10 +1,7 @@
-import React, { useEffect, useReducer, useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Col } from 'react-bootstrap';
 import { useQuery } from 'react-query';
-import ButtonDumbMerch from '../../components/ButtonDumbMerch';
 import { API } from '../../config/api';
-import toRupiah from '@develoka/angka-rupiah-js';
-import dateFormat, { masks } from 'dateformat';
 import LayoutUser from '../../hoc/LayoutUser';
 import OrderItemCard from '../../components/OrderItemCard';
 
@@ -15,7 +12,7 @@ const Order = () => {
   const [orderData, setOrderData] = useState();
   const [activeFilter, setActiveFilter] = useState();
 
-  let { data: orders, refetch } = useQuery('ordersCache', async () => {
+  let { data: orders } = useQuery('ordersCache', async () => {
     const response = await API.get('/transactions');
 
     return response.data.data;

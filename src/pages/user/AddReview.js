@@ -8,7 +8,7 @@ import ReviewForm from '../../components/ReviewForm';
 
 const AddReview = () => {
   const params = useParams();
-  let { data: order, refetch } = useQuery('orderCache', async () => {
+  let { data: order } = useQuery('orderCache', async () => {
     const response = await API.get('/transactions/reviews/' + params.id_order);
 
     return response.data.data;

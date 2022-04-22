@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FloatingLabel, Form, Col, Row } from 'react-bootstrap';
 import ButtonDumbMerch from '../../components/ButtonDumbMerch';
 import LayoutAdmin from '../../hoc/LayoutAdmin';
-import Select, { StylesConfig } from 'react-select';
+import Select from 'react-select';
 import { API } from '../../config/api';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -19,7 +19,7 @@ const EditProduct = () => {
   const [preview, setPreview] = useState();
   const navigate = useNavigate();
 
-  let { data: product, refetch } = useQuery('productCache', async () => {
+  let { data: product } = useQuery('productCache', async () => {
     const response = await API.get('/products/' + params.id);
     setPreview(response.data.data.image);
     return response.data.data;

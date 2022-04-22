@@ -21,11 +21,7 @@ const OrderAdmin = () => {
         tracking_number: data.trackingNumber,
       };
       console.log('payload nihh', payload);
-      const response = await API.patch(
-        '/transactions/' + data.id,
-        payload,
-        apiHeader
-      );
+      await API.patch('/transactions/' + data.id, payload, apiHeader);
       toast('order updated!');
       refetch();
     } catch (error) {
