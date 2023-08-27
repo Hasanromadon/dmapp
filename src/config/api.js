@@ -4,7 +4,7 @@ import axios from 'axios';
 export const API = axios.create({
   baseURL:
     process.env.REACT_APP_SERVER_URL ||
-    'https://dumbmerch-hasan.herokuapp.com/api/v1' ||
+    'https://dumb-merch-0e003ee50c5b.herokuapp.com/api/v1' ||
     'http://localhost:5000/api/v1',
 });
 
